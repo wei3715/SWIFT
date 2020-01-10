@@ -5,11 +5,11 @@ import UIKit
 var str = "Hello, playground"
 
 //普通switch语句
-let name = "赵维维"
+let name = "Jolly"
 switch name {
 case "周伟伟":
     print("答对")
-case "赵维维":
+case "Jolly":
     print("答错")
 default:
     print("null")

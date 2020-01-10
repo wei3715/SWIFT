@@ -21,9 +21,9 @@ print()
 typealias newname = Int
 let aa: newname = 10
 
-var 赵维维 = "女生"
-var 长大后赵维维  = "超人"
-print("\(赵维维)长大后变成\(长大后赵维维)")
+var Jolly = "女生"
+var 长大后Jolly  = "超人"
+print("\(Jolly)长大后变成\(长大后Jolly)")
 
 
 var 可选变量: Int?

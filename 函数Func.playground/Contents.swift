@@ -9,12 +9,12 @@ func zww(name:String) -> String{
     return (name)
 }
 
-print(zww(name: "赵维维"))
+print(zww(name: "Jolly"))
 
 func zwwDetail(name:String,age:Int) -> String {
     return (name + String(age))
 }
-print(zwwDetail(name: "赵维维", age: 18))
+print(zwwDetail(name: "Jolly", age: 18))
 
 func zwwCount(no:Int,age:Int) -> Int {
     return (no + age)
@@ -65,7 +65,7 @@ func beHappy (name:String) {
     print("\(name) happy everyday!fogget the terrible thing")
 }
 
-beHappy(name: "赵维维")
+beHappy(name: "Jolly")
 
 //外部参数
 func outArg (firstArg a: Int, secondArg b: Int) -> Int{
@@ -111,26 +111,26 @@ func 复杂函数参数(funcVari: (Int,Int) -> Int, a: Int, b: Int) {
 复杂函数参数(funcVari: sum, a: 5, b: 6)
 
 //自写
-//赵维维函数1 函数类型为:(Int,String) -> String
-func 赵维维函数1 (age:Int, name: String) -> String {
+//Jolly函数1 函数类型为:(Int,String) -> String
+func Jolly函数1 (age:Int, name: String) -> String {
     return name + "芳龄为：" + String(age)
 }
-赵维维函数1(age: 18, name: "赵维维")
+Jolly函数1(age: 18, name: "Jolly")
 
-//使用函数类型赋值：赵维维函数1对应字符串变量 可以代替 赵维维函数1 使用
-var 赵维维函数1对应字符串变量:(Int,String) -> String = 赵维维函数1
-print("使用函数类型赋值的字符串==\(赵维维函数1对应字符串变量(20,"Zoe"))")
+//使用函数类型赋值：Jolly函数1对应字符串变量 可以代替 Jolly函数1 使用
+var Jolly函数1对应字符串变量:(Int,String) -> String = Jolly函数1
+print("使用函数类型赋值的字符串==\(Jolly函数1对应字符串变量(20,"Zoe"))")
 
-var str00 = 赵维维函数1(age: 28, name: "赵维维")
+var str00 = Jolly函数1(age: 28, name: "Jolly")
 print("字符串值==\(str00)")
 
 
 //函数类型作为参数类型
-func 赵维维函数2(赵维维函数1对应字符串变量: (Int,String) -> String, age00: Int, name00: String){
-    print("赵维维函数2 函数值\(赵维维函数1对应字符串变量(age00,name00))")
+func Jolly函数2(Jolly函数1对应字符串变量: (Int,String) -> String, age00: Int, name00: String){
+    print("Jolly函数2 函数值\(Jolly函数1对应字符串变量(age00,name00))")
 }
 
-赵维维函数2(赵维维函数1对应字符串变量:赵维维函数1 , age00: 20, name00: "lily")
+Jolly函数2(Jolly函数1对应字符串变量:Jolly函数1 , age00: 20, name00: "lily")
 
 //函数嵌套 :返回值类型是函数类型（无参，返回值为Int的函数类型: ()）
 func 嵌套函数 (外部参数 total: Int) -> () -> Int {
